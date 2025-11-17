@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Sistemas Operativos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/" class="logo-link">
+                    <img src="logos/descarga.png" alt="SO Project" class="logo-icon" width="48" height="48">
+                </a>
+                <span class="logo-text">Proyecto Sistemas Operativos</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#videos" class="nav-link">Videos</a></li>
+                <li><a href="#imagenes" class="nav-link">Galería</a></li>
+                <li><a href="#tecnologia" class="nav-link">Tecnología</a></li>
+                <li><a href="#equipo" class="nav-link">Equipo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HEADER HERO -->
+    <header class="header-hero">
+        <div class="hero-content">
+            <h1>Proyecto de Sistemas Operativos</h1>
+            <p class="hero-subtitle">Implementación completa de un kernel multitarea con gestión avanzada de recursos</p>
+            <div class="hero-features">
+                <div class="feature-item">
+                    <img src="logos/actividad.jpeg" alt="Actividades" class="feature-icon-img">
+                    <span>6 Actividades Documentadas</span>
+                </div>
+                <div class="feature-item">
+                    <img src="logos/video.png" alt="Videos" class="feature-icon-img">
+                    <span>Videos Explicativos</span>
+                </div>
+                <div class="feature-item">
+                    <img src="logos/imagenes infor.png" alt="Diagramas" class="feature-icon-img">
+                    <span>Imagenes informativas</span>
+                </div>
+            </div>
+            <a href="#videos" class="btn-cta">Ver Contenido</a>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- SECCIÓN VIDEOS -->
+        <section id="videos" class="seccion videos-section">
+            <div class="seccion-header">
+                <h2>Contenido Multimedia</h2>
+                <div class="header-line"></div>
+                <p>Mira nuestros videos sobre el desarrollo del proyecto</p>
+            </div>
+
+            <div class="contenedor-tarjetas">
+                <div class="tarjeta card-1" data-info="Configuracion e instalacion de las mv">
+                    <div class="tarjeta-imagen">
+                        <img src="assets/actividad 1/Presentación Diapositivas Collage de Fotos del Verano Simple Sencillo Blanco.jpg" alt="instalacion">
+                        <div class="play-overlay">
+                            <div class="play-button"></div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-contenido">
+                        <h3 class="tarjeta-titulo">Configuración e Instalación de las MV</h3>
+                        <p class="tarjeta-descripcion">Explicacion de la actividad 1: Xubuntu, Alma linux, Rocky linux</p>
+                        <div class="tarjeta-metadata">
+                            <span class="meta-badge">15 min</span>
+                            <span class="meta-badge">Inicio</span>
+                        </div>
+                        <div class="tarjeta-botones tarjeta-botones-single">
+                            <a href="https://youtu.be/fsuroRYmagw?si=9SxcGwbQScIPnWZD" target="_blank" class="boton boton-primary">Reproducir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta card-2" data-info="titulo actividad 2">
+                    <div class="tarjeta-imagen">
+                        <img src="https://via.placeholder.com/400x300?text=Activity+2" alt="Procesos">
+                        <div class="play-overlay">
+                            <div class="play-button"></div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-contenido">
+                        <h3 class="tarjeta-titulo">act 2</h3>
+                        <p class="tarjeta-descripcion">Descripción.</p>
+                        <div class="tarjeta-metadata">
+                            <span class="meta-badge">18:20 min</span>
+                            <span class="meta-badge">Avanzado</span>
+                        </div>
+                        <div class="tarjeta-botones tarjeta-botones-single">
+                            <a href="#" target="_blank" class="boton boton-primary">Reproducir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta card-3" data-info="Sistema de gestión de memoria virtual">
+                    <div class="tarjeta-imagen">
+                        <img src="https://via.placeholder.com/400x300?text=Memory+Management" alt="Memoria">
+                        <div class="play-overlay">
+                            <div class="play-button"></div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-contenido">
+                        <h3 class="tarjeta-titulo">act 3</h3>
+                        <p class="tarjeta-descripcion">Descripción.</p>
+                        <div class="tarjeta-metadata">
+                            <span class="meta-badge">15:30 min</span>
+                            <span class="meta-badge">Técnico</span>
+                        </div>
+                        <div class="tarjeta-botones tarjeta-botones-single">
+                            <a href="#" target="_blank" class="boton boton-primary">Reproducir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta card-4" data-info="Demostración del sistema de archivos">
+                    <div class="tarjeta-imagen">
+                        <img src="https://via.placeholder.com/400x300?text=File+System" alt="Archivos">
+                        <div class="play-overlay">
+                            <div class="play-button"></div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-contenido">
+                        <h3 class="tarjeta-titulo">act 4</h3>
+                        <p class="tarjeta-descripcion">Descripción.</p>
+                        <div class="tarjeta-metadata">
+                            <span class="meta-badge">14:15 min</span>
+                            <span class="meta-badge">Intermedio</span>
+                        </div>
+                        <div class="tarjeta-botones tarjeta-botones-single">
+                            <a href="#" target="_blank" class="boton boton-primary">Reproducir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta card-5" data-info="Sincronización de hilos y manejo de concurrencia">
+                    <div class="tarjeta-imagen">
+                        <img src="https://via.placeholder.com/400x300?text=Threading" alt="Hilos">
+                        <div class="play-overlay">
+                            <div class="play-button"></div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-contenido">
+                        <h3 class="tarjeta-titulo">act 5</h3>
+                        <p class="tarjeta-descripcion">Descripción.</p>
+                        <div class="tarjeta-metadata">
+                            <span class="meta-badge">16:45 min</span>
+                            <span class="meta-badge">Avanzado</span>
+                        </div>
+                        <div class="tarjeta-botones tarjeta-botones-single">
+                            <a href="#" target="_blank" class="boton boton-primary">Reproducir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta card-6" data-info="Sistema de entrada y salida del kernel">
+                    <div class="tarjeta-imagen">
+                        <img src="https://via.placeholder.com/400x300?text=I+O+System" alt="I/O">
+                        <div class="play-overlay">
+                            <div class="play-button"></div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-contenido">
+                        <h3 class="tarjeta-titulo">act 6</h3>
+                        <p class="tarjeta-descripcion">Descripción.</p>
+                        <div class="tarjeta-metadata">
+                            <span class="meta-badge">13:50 min</span>
+                            <span class="meta-badge">Técnico</span>
+                        </div>
+                        <div class="tarjeta-botones tarjeta-botones-single">
+                            <a href="#" target="_blank" class="boton boton-primary">Reproducir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN GALERÍA -->
+        <section id="imagenes" class="seccion gallery-section">
+            <div class="seccion-header">
+                <h2>Galería de Imágenes por Actividades</h2>
+                <div class="header-line"></div>
+                <p>Explora las imágenes de cada actividad - Haz click para ver más detalles</p>
+            </div>
+
+            <!-- VISTA GALERÍA (Default) -->
+            <div id="gallery-view" class="gallery-view active">
+                <div class="gallery-grid">
+                    <!-- ACTIVIDAD 1 -->
+                    <div class="gallery-card" data-activity="1">
+                        <div class="card-carousel">
+                            <div class="carousel-container">
+                                <button class="carousel-nav carousel-nav-prev" aria-label="Imagen anterior">❮</button>
+                                
+                                <div class="carousel-images">
+                                    <img src="assets/actividad 1/descarga.jpeg" alt="Actividad 1 - Imagen 1" class="carousel-image">
+                                    <img src="assets/actividad 1/maxresdefault.jpg" alt="Actividad 1 - Imagen 2" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+1+Img+3" alt="Actividad 1 - Imagen 3" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+1+Img+4" alt="Actividad 1 - Imagen 4" class="carousel-image">
+                                </div>
+
+                                <button class="carousel-nav carousel-nav-next" aria-label="Siguiente imagen">❯</button>
+                            </div>
+
+                            <div class="carousel-dots">
+                                <button class="dot active" data-index="0" aria-label="Ir a imagen 1"></button>
+                                <button class="dot" data-index="1" aria-label="Ir a imagen 2"></button>
+                                <button class="dot" data-index="2" aria-label="Ir a imagen 3"></button>
+                                <button class="dot" data-index="3" aria-label="Ir a imagen 4"></button>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title">Configuración e Instalación</h3>
+                            <p class="card-description">Instalación y configuración de máquinas virtuales: Xubuntu, Alma Linux y Rocky Linux. Proceso completo de setup.</p>
+                            <button class="btn-view-details" data-activity="1">Ver Detalles →</button>
+                        </div>
+                    </div>
+
+                    <!-- ACTIVIDAD 2 -->
+                    <div class="gallery-card" data-activity="2">
+                        <div class="card-carousel">
+                            <div class="carousel-container">
+                                <button class="carousel-nav carousel-nav-prev" aria-label="Imagen anterior">❮</button>
+                                
+                                <div class="carousel-images">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+2+Img+1" alt="Actividad 2 - Imagen 1" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+2+Img+2" alt="Actividad 2 - Imagen 2" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+2+Img+3" alt="Actividad 2 - Imagen 3" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+2+Img+4" alt="Actividad 2 - Imagen 4" class="carousel-image">
+                                </div>
+
+                                <button class="carousel-nav carousel-nav-next" aria-label="Siguiente imagen">❯</button>
+                            </div>
+
+                            <div class="carousel-dots">
+                                <button class="dot active" data-index="0" aria-label="Ir a imagen 1"></button>
+                                <button class="dot" data-index="1" aria-label="Ir a imagen 2"></button>
+                                <button class="dot" data-index="2" aria-label="Ir a imagen 3"></button>
+                                <button class="dot" data-index="3" aria-label="Ir a imagen 4"></button>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title">Gestión de Procesos</h3>
+                            <p class="card-description">Demostración de la gestión de procesos del kernel, scheduler y distribución de recursos en tiempo real.</p>
+                            <button class="btn-view-details" data-activity="2">Ver Detalles →</button>
+                        </div>
+                    </div>
+
+                    <!-- ACTIVIDAD 3 -->
+                    <div class="gallery-card" data-activity="3">
+                        <div class="card-carousel">
+                            <div class="carousel-container">
+                                <button class="carousel-nav carousel-nav-prev" aria-label="Imagen anterior">❮</button>
+                                
+                                <div class="carousel-images">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+3+Img+1" alt="Actividad 3 - Imagen 1" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+3+Img+2" alt="Actividad 3 - Imagen 2" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+3+Img+3" alt="Actividad 3 - Imagen 3" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+3+Img+4" alt="Actividad 3 - Imagen 4" class="carousel-image">
+                                </div>
+
+                                <button class="carousel-nav carousel-nav-next" aria-label="Siguiente imagen">❯</button>
+                            </div>
+
+                            <div class="carousel-dots">
+                                <button class="dot active" data-index="0" aria-label="Ir a imagen 1"></button>
+                                <button class="dot" data-index="1" aria-label="Ir a imagen 2"></button>
+                                <button class="dot" data-index="2" aria-label="Ir a imagen 3"></button>
+                                <button class="dot" data-index="3" aria-label="Ir a imagen 4"></button>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title">Gestión de Memoria Virtual</h3>
+                            <p class="card-description">Implementación de memoria virtual con paginación, tablas de páginas y algoritmos de reemplazo.</p>
+                            <button class="btn-view-details" data-activity="3">Ver Detalles →</button>
+                        </div>
+                    </div>
+
+                    <!-- ACTIVIDAD 4 -->
+                    <div class="gallery-card" data-activity="4">
+                        <div class="card-carousel">
+                            <div class="carousel-container">
+                                <button class="carousel-nav carousel-nav-prev" aria-label="Imagen anterior">❮</button>
+                                
+                                <div class="carousel-images">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+4+Img+1" alt="Actividad 4 - Imagen 1" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+4+Img+2" alt="Actividad 4 - Imagen 2" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+4+Img+3" alt="Actividad 4 - Imagen 3" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+4+Img+4" alt="Actividad 4 - Imagen 4" class="carousel-image">
+                                </div>
+
+                                <button class="carousel-nav carousel-nav-next" aria-label="Siguiente imagen">❯</button>
+                            </div>
+
+                            <div class="carousel-dots">
+                                <button class="dot active" data-index="0" aria-label="Ir a imagen 1"></button>
+                                <button class="dot" data-index="1" aria-label="Ir a imagen 2"></button>
+                                <button class="dot" data-index="2" aria-label="Ir a imagen 3"></button>
+                                <button class="dot" data-index="3" aria-label="Ir a imagen 4"></button>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title">Sistema de Archivos</h3>
+                            <p class="card-description">Estructura del sistema de archivos con inodes, bloques de datos, directorios y sistema de permisos.</p>
+                            <button class="btn-view-details" data-activity="4">Ver Detalles →</button>
+                        </div>
+                    </div>
+
+                    <!-- ACTIVIDAD 5 -->
+                    <div class="gallery-card" data-activity="5">
+                        <div class="card-carousel">
+                            <div class="carousel-container">
+                                <button class="carousel-nav carousel-nav-prev" aria-label="Imagen anterior">❮</button>
+                                
+                                <div class="carousel-images">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+5+Img+1" alt="Actividad 5 - Imagen 1" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+5+Img+2" alt="Actividad 5 - Imagen 2" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+5+Img+3" alt="Actividad 5 - Imagen 3" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+5+Img+4" alt="Actividad 5 - Imagen 4" class="carousel-image">
+                                </div>
+
+                                <button class="carousel-nav carousel-nav-next" aria-label="Siguiente imagen">❯</button>
+                            </div>
+
+                            <div class="carousel-dots">
+                                <button class="dot active" data-index="0" aria-label="Ir a imagen 1"></button>
+                                <button class="dot" data-index="1" aria-label="Ir a imagen 2"></button>
+                                <button class="dot" data-index="2" aria-label="Ir a imagen 3"></button>
+                                <button class="dot" data-index="3" aria-label="Ir a imagen 4"></button>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title">Sincronización de Hilos</h3>
+                            <p class="card-description">Mecanismos de sincronización: semáforos, mutex, monitores y control de concurrencia entre hilos.</p>
+                            <button class="btn-view-details" data-activity="5">Ver Detalles →</button>
+                        </div>
+                    </div>
+
+                    <!-- ACTIVIDAD 6 -->
+                    <div class="gallery-card" data-activity="6">
+                        <div class="card-carousel">
+                            <div class="carousel-container">
+                                <button class="carousel-nav carousel-nav-prev" aria-label="Imagen anterior">❮</button>
+                                
+                                <div class="carousel-images">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+6+Img+1" alt="Actividad 6 - Imagen 1" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+6+Img+2" alt="Actividad 6 - Imagen 2" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+6+Img+3" alt="Actividad 6 - Imagen 3" class="carousel-image">
+                                    <img src="https://via.placeholder.com/400x250?text=Actividad+6+Img+4" alt="Actividad 6 - Imagen 4" class="carousel-image">
+                                </div>
+
+                                <button class="carousel-nav carousel-nav-next" aria-label="Siguiente imagen">❯</button>
+                            </div>
+
+                            <div class="carousel-dots">
+                                <button class="dot active" data-index="0" aria-label="Ir a imagen 1"></button>
+                                <button class="dot" data-index="1" aria-label="Ir a imagen 2"></button>
+                                <button class="dot" data-index="2" aria-label="Ir a imagen 3"></button>
+                                <button class="dot" data-index="3" aria-label="Ir a imagen 4"></button>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title">Sistema de I/O</h3>
+                            <p class="card-description">Gestión de entrada/salida, controladores de dispositivos e interrupciones del sistema.</p>
+                            <button class="btn-view-details" data-activity="6">Ver Detalles →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VISTA DETALLADA (Hidden by default) -->
+            <div id="detail-view" class="detail-view">
+                <button id="btn-back-to-gallery" class="btn-back" aria-label="Volver a la galería">
+                    ← Volver a la galería
+                </button>
+
+                <div class="detail-container">
+                    <div class="detail-header">
+                        <h2 id="detail-title">Título de Actividad</h2>
+                        <p id="detail-description">Descripción extendida de la actividad...</p>
+                    </div>
+
+                    <div class="detail-gallery">
+                        <div class="detail-gallery-grid" id="detail-gallery-grid">
+                            <!-- Las imágenes se cargarán aquí con JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIGHTBOX -->
+            <div id="lightbox" class="lightbox">
+                <div class="lightbox-content">
+                    <button class="lightbox-close" aria-label="Cerrar lightbox">&times;</button>
+                    <button class="lightbox-nav lightbox-nav-prev" aria-label="Imagen anterior">❮</button>
+                    
+                    <img id="lightbox-image" src="" alt="Imagen ampliada">
+                    
+                    <button class="lightbox-nav lightbox-nav-next" aria-label="Siguiente imagen">❯</button>
+                    
+                    <div class="lightbox-counter">
+                        <span id="lightbox-counter-current">1</span> / <span id="lightbox-counter-total">4</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODAL DE INFORMACIÓN DE IMAGEN -->
+        <div id="imageModal" class="modal-image">
+            <div class="modal-image-content">
+                <button class="modal-close">&times;</button>
+                <div class="modal-image-body">
+                    <img id="modalImage" src="" alt="">
+                    <div class="modal-image-info">
+                        <h3 id="modalTitle"></h3>
+                        <p id="modalDescription"></p>
+                        <div class="modal-activity-summary" id="activitySummary"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN TECNOLOGÍA - LINUX & DOCKER -->
+        <section id="tecnologia" class="seccion tech-section">
+            <div class="seccion-header">
+                <h2>Tecnología: Linux & Docker</h2>
+                <div class="header-line"></div>
+                <p>Infraestructura moderna para desarrollo de sistemas operativos</p>
+            </div>
+
+            <!-- CONTENEDOR GRID CON TARJETAS -->
+            <div class="tech-grid">
+                <!-- TARJETA LINUX -->
+                <div class="tech-card">
+                    <div class="tech-icon">🐧</div>
+                    <h3>Kernel Linux</h3>
+                    <p class="tech-category">Sistema Base</p>
+                    <p class="tech-description">Utilizamos Linux como plataforma base para el desarrollo, aprovechando su arquitectura modular y su ecosistema de herramientas de desarrollo.</p>
+                    <ul class="tech-features">
+                        <li>✓ Multitarea y multiproceso</li>
+                        <li>✓ Gestión avanzada de memoria</li>
+                        <li>✓ Sistema de permisos robusto</li>
+                        <li>✓ Comunidad activa y soporte</li>
+                    </ul>
+                </div>
+
+                <!-- TARJETA DOCKER -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="logos/docker.png" alt="Docker" class="tech-icon-img" width="48" height="48">
+                    </div>
+                    <h3>Docker Containers</h3>
+                    <p class="tech-category">Virtualización Ligera</p>
+                    <p class="tech-description">Implementamos Docker para garantizar que el proyecto funcione en cualquier entorno sin dependencias conflictivas.</p>
+                    <ul class="tech-features">
+                        <li>✓ Contenedores independientes</li>
+                        <li>✓ Reproducibilidad garantizada</li>
+                        <li>✓ Despliegue simplificado</li>
+                        <li>✓ Escalabilidad automática</li>
+                    </ul>
+                </div>
+
+                <!-- TARJETA KERNEL DEVELOPMENT -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="" alt ="Kernel Dev" class="tech-icon-img" width="48" height="48">
+                    </div>
+                    <h3>Desarrollo de Kernel</h3>
+                    <p class="tech-category">Compilación y Testing</p>
+                    <p class="tech-description">Proceso completo de compilación del kernel con optimizaciones específicas y pruebas exhaustivas del sistema.</p>
+                    <ul class="tech-features">
+                        <li>✓ Compilación modular</li>
+                        <li>✓ Debugging avanzado</li>
+                        <li>✓ Testing automatizado</li>
+                        <li>✓ Perfilado de performance</li>
+                    </ul>
+                </div>
+
+                <!-- TARJETA VIRTUALIZATION -->
+                <div class="tech-card">
+                    <div class="tech-icon">💻</div>
+                    <h3>Máquinas Virtuales</h3>
+                    <p class="tech-category">Entornos Aislados</p>
+                    <p class="tech-description">Utilizamos KVM/QEMU para crear entornos virtuales completamente aislados para pruebas sin afectar el sistema principal.</p>
+                    <ul class="tech-features">
+                        <li>✓ Aislamiento completo</li>
+                        <li>✓ Snapshots y recuperación</li>
+                        <li>✓ Recursos dedicados</li>
+                        <li>✓ Flexibilidad de configuración</li>
+                    </ul>
+                </div>
+
+                <!-- TARJETA SYSTEM CALLS -->
+                <div class="tech-card">
+                    <div class="tech-icon">📡</div>
+                    <h3>System Calls & APIs</h3>
+                    <p class="tech-category">Interfaz Kernel-User</p>
+                    <p class="tech-description">Implementación de llamadas al sistema que permiten a las aplicaciones interactuar con el kernel de manera segura y eficiente.</p>
+                    <ul class="tech-features">
+                        <li>✓ Context switching seguro</li>
+                        <li>✓ Privilegio escalado</li>
+                        <li>✓ Manejo de excepciones</li>
+                        <li>✓ Sincronización de procesos</li>
+                    </ul>
+                </div>
+
+                <!-- TARJETA PERFORMANCE -->
+                <div class="tech-card">
+                    <div class="tech-icon">⚡</div>
+                    <h3>Optimización & Performance</h3>
+                    <p class="tech-category">Análisis y Mejora</p>
+                    <p class="tech-description">Análisis profundo del rendimiento del sistema con herramientas como perf, strace y análisis de benchmarks.</p>
+                    <ul class="tech-features">
+                        <li>✓ Profiling en tiempo real</li>
+                        <li>✓ Análisis de bottlenecks</li>
+                        <li>✓ Optimización de caché</li>
+                        <li>✓ Benchmarking comparativo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SECCIÓN ADDITIONAL INFO -->
+            <div class="tech-info-container">
+                <div class="tech-info-box">
+                    <h4>¿Por qué Linux?</h4>
+                    <p>Linux es el sistema operativo ideal para aprender sobre la arquitectura del kernel. Su código fuente es abierto, bien documentado y cuenta con una comunidad mundial que contribuye constantemente. Nos permite entender desde los principios fundamentales hasta las optimizaciones avanzadas.</p>
+                </div>
+                <div class="tech-info-box">
+                    <h4>¿Por qué Docker?</h4>
+                    <p>Docker revoluciona la forma en que distribuimos aplicaciones. Encapsula nuestro entorno completo de desarrollo en contenedores ligeros y portátiles. Esto significa que el proyecto funciona idénticamente en cualquier máquina, eliminando el clásico problema "funciona en mi máquina".</p>
+                </div>
+                <div class="tech-info-box">
+                    <h4>Stack Tecnológico</h4>
+                    <p>Nuestra pila incluye: Kernel 5.x+, Docker, QEMU/KVM, GCC Toolchain, Systemd, Bash scripting, y herramientas de análisis de performance. Todo integrado en un flujo de trabajo CI/CD automatizado.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN EQUIPO -->
+        <section id="equipo" class="seccion team-section">
+            <div class="seccion-header">
+                <h2>Nuestro Equipo</h2>
+                <div class="header-line"></div>
+                <p>Los desarrolladores detrás de este proyecto</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">S</div>
+                    <h3>Sebastián</h3>
+                    <p class="team-role">Lead Developer</p>
+                    <p class="team-bio">Experto en arquitectura de kernels y gestión de memoria.</p>
+                    <div class="team-social">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">J</div>
+                    <h3>Julián</h3>
+                    <p class="team-role">Backend Developer</p>
+                    <p class="team-bio">Especialista en sistemas de archivos y scheduler.</p>
+                    <div class="team-social">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">Jh</div>
+                    <h3>Jhordy</h3>
+                    <p class="team-role">System Architect</p>
+                    <p class="team-bio">Diseñador de la arquitectura central del sistema.</p>
+                    <div class="team-social">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">Jo</div>
+                    <h3>Jorge</h3>
+                    <p class="team-role">QA Engineer</p>
+                    <p class="team-bio">Encargado de pruebas y validación del sistema.</p>
+                    <div class="team-social">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre el Proyecto</h4>
+                <p>Proyecto académico de implementación de un Sistema Operativo con interfaz multimedia.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#imagenes">Galería</a></li>
+                    <li><a href="#tecnologia">Tecnología</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Proyecto SO</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
