@@ -437,10 +437,16 @@ const activityData = {
         title: 'Configuración e Instalación de MV',
         description: 'Instalación y configuración de máquinas virtuales: Xubuntu, Alma Linux y Rocky Linux. Proceso completo de setup.',
         images: [
-            {src: 'assets/actividad 1/descarga.jpeg', desc: 'imagen uno de ejemplo'},
-            {src: 'assets/actividad 1/maxresdefault.jpg', desc: 'soy linux'},
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+1+Img+3', desc: 'Instalación de Rocky Linux con kernel optimizado'},
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+1+Img+4', desc: 'Configuración de red y servicios básicos'}
+            {src: 'assets/actividad 1/particion.png', desc: 'particion del disco en xubuntu'},
+            {src: 'assets/actividad 1/login.png', desc: 'primer logeo en nuestra vm despues de la instalacion'},
+            {src: 'assets/actividad 1/google.png', desc: 'navegadores: chromium instalado en el proceso de instalacion'},
+            {src: 'assets/actividad 1/firefox.png', desc: 'navegadores: firefox instalado por defecto'},
+            {src: 'assets/actividad 1/visuals.png', desc: 'editores de codigo: visual studio code'},
+            {src: 'assets/actividad 1/vim.png', desc: 'editores de codigo: vim en la terminal'},
+            {src: 'assets/actividad 1/exito.png', desc: 'instalacion correcta de alma linux y reinicio del sistema'},
+            {src: 'assets/actividad 1/partialma.png', desc: 'particion del disco alma linux'},
+            {src: 'assets/actividad 1/ins.png', desc: 'instalacion de las herramientas en alma linux'},
+            {src: 'assets/actividad 1/ping.png', desc: 'alma linux: hacemos ping y verificamos todo instalado correctaamente git y curl'}
         ]
     },
     2: {
