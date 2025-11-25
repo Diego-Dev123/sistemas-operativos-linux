@@ -17,6 +17,7 @@
                 <span class="logo-text">Proyecto Sistemas Operativos</span>
             </div>
             <ul class="nav-menu">
+                <li><a href="#proyecto" class="nav-link">Proyecto</a></li>
                 <li><a href="#videos" class="nav-link">Videos</a></li>
                 <li><a href="#imagenes" class="nav-link">Galería</a></li>
                 <li><a href="#tecnologia" class="nav-link">Tecnología</a></li>
@@ -55,6 +56,49 @@
 
     <!-- MAIN -->
     <main>
+        <!-- NUEVA SECCIÓN: PROYECTO & TECNOLOGÍAS -->
+        <section id="proyecto" class="seccion proyecto-section">
+            <div class="seccion-header">
+                <h2>Proyecto & Tecnologías</h2>
+                <div class="header-line"></div>
+                <p>Implementación completa de un kernel multitarea con Docker, Kubernetes y herramientas modernas</p>
+            </div>
+
+            <!-- DESCRIPCIÓN BREVE -->
+            <div class="proyecto-intro">
+                <div class="intro-content">
+                    <h3>Sobre el Proyecto</h3>
+                    <p>Proyecto académico de sistemas operativos que abarca desde la arquitectura del kernel Linux hasta containerización con Docker y Kubernetes. A lo largo de 6 actividades, implementamos gestión de procesos, memoria virtual, sincronización y análisis de performance.</p>
+                </div>
+            </div>
+
+            <!-- OBJETIVOS PRINCIPALES (reducido) -->
+            <div class="proyecto-objectives">
+                <h3>Objetivos Principales</h3>
+                <div class="objectives-grid">
+                    <div class="objective-card">
+                        <img src="logos/icon-objetivo.svg" alt="Kernel" class="objective-icon">
+                        <h4>Kernel Linux</h4>
+                        <p>Arquitectura y componentes internos</p>
+                    </div>
+                    <div class="objective-card">
+                        <img src="logos/icon-paquete.svg" alt="Docker" class="objective-icon">
+                        <h4>Containerización</h4>
+                        <p>Docker y Kubernetes</p>
+                    </div>
+                    <div class="objective-card">
+                        <img src="logos/icon-sincronizacion.svg" alt="Concurrencia" class="objective-icon">
+                        <h4>Concurrencia</h4>
+                        <p>Sincronización y threads</p>
+                    </div>
+                    <div class="objective-card">
+                        <img src="logos/icon-memoria.svg" alt="Memoria" class="objective-icon">
+                        <h4>Memoria Virtual</h4>
+                        <p>Paginación y gestión</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- SECCIÓN VIDEOS -->
         <section id="videos" class="seccion videos-section">
             <div class="seccion-header">
@@ -124,42 +168,42 @@
                     </div>
                 </div>
 
-                <div class="tarjeta card-4" data-info="Demostración del sistema de archivos">
+                <div class="tarjeta card-4" data-info="docker">
                     <div class="tarjeta-imagen">
-                        <img src="https://via.placeholder.com/400x300?text=File+System" alt="Archivos">
+                        <img src="logos/act5.png" alt="Archivos">
                         <div class="play-overlay">
                             <div class="play-button"></div>
                         </div>
                     </div>
                     <div class="tarjeta-contenido">
-                        <h3 class="tarjeta-titulo">act 4</h3>
-                        <p class="tarjeta-descripcion">Descripción.</p>
+                        <h3 class="tarjeta-titulo">Instalación y configuración de Docker Engine</h3>
+                        <p class="tarjeta-descripcion">Conociendo herramientas docker y instalando en linux.</p>
                         <div class="tarjeta-metadata">
-                            <span class="meta-badge">14:15 min</span>
+                            <span class="meta-badge">23:00 min</span>
                             <span class="meta-badge">Intermedio</span>
                         </div>
                         <div class="tarjeta-botones tarjeta-botones-single">
-                            <a href="#" target="_blank" class="boton boton-primary">Reproducir</a>
+                            <a href="https://youtu.be/X-yZdepnyqE" target="_blank" class="boton boton-primary">Reproducir</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="tarjeta card-5" data-info="Sincronización de hilos y manejo de concurrencia">
+                <div class="tarjeta card-5" data-info="Modificación y publicación en Docker Hub">
                     <div class="tarjeta-imagen">
-                        <img src="https://via.placeholder.com/400x300?text=Threading" alt="Hilos">
+                        <img src="logos/act4.jpeg" alt="Hilos">
                         <div class="play-overlay">
                             <div class="play-button"></div>
                         </div>
                     </div>
                     <div class="tarjeta-contenido">
-                        <h3 class="tarjeta-titulo">act 5</h3>
-                        <p class="tarjeta-descripcion">Descripción.</p>
+                        <h3 class="tarjeta-titulo">Modificación y publicación en Docker Hub</h3>
+                        <p class="tarjeta-descripcion">publicamos nuestra primera imagen en docker hub.</p>
                         <div class="tarjeta-metadata">
-                            <span class="meta-badge">16:45 min</span>
+                            <span class="meta-badge">20:00 min</span>
                             <span class="meta-badge">Avanzado</span>
                         </div>
                         <div class="tarjeta-botones tarjeta-botones-single">
-                            <a href="#" target="_blank" class="boton boton-primary">Reproducir</a>
+                            <a href="https://youtu.be/C_FzO39ye5Y" target="_blank" class="boton boton-primary">Reproducir</a>
                         </div>
                     </div>
                 </div>
@@ -303,10 +347,20 @@
                                 <button class="carousel-nav carousel-nav-prev" aria-label="Imagen anterior">❮</button>
                                 
                                 <div class="carousel-images">
-                                    <img src="https://via.placeholder.com/400x250?text=Actividad+4+Img+1" alt="Actividad 4 - Imagen 1" class="carousel-image">
-                                    <img src="https://via.placeholder.com/400x250?text=Actividad+4+Img+2" alt="Actividad 4 - Imagen 2" class="carousel-image">
-                                    <img src="https://via.placeholder.com/400x250?text=Actividad+4+Img+3" alt="Actividad 4 - Imagen 3" class="carousel-image">
-                                    <img src="https://via.placeholder.com/400x250?text=Actividad+4+Img+4" alt="Actividad 4 - Imagen 4" class="carousel-image">
+                                    <img src="assets/actividad 4/cap 1.png" alt="Actividad 4 - Imagen 1" class="carousel-image">
+                                    <img src="assets/actividad 4/cap2 comlementos.png" alt="Actividad 4 - Imagen 2" class="carousel-image">
+                                    <img src="assets/actividad 4/cap3 aggg repo.png" alt="Actividad 4 - Imagen 3" class="carousel-image">
+                                    <img src="assets/actividad 4/cap4 engine.png" alt="Actividad 4 - Imagen 4" class="carousel-image">
+                                    <img src="assets/actividad 4/cap5 serviciodocker.png" alt="Actividad 4 - Imagen 5" class="carousel-image">
+                                    <img src="assets/actividad 4/cap6 dockerversion.png" alt="Actividad 4 - Imagen 6" class="carousel-image">
+                                    <img src="assets/actividad 4/cap7 dockerinfo.png" alt="Actividad 4 - Imagen 7" class="carousel-image">
+                                    <img src="assets/actividad 4/cap8 dockerrun.png" alt="Actividad 4 - Imagen 8" class="carousel-image">
+                                    <img src="assets/actividad 4/cap9_dockerfile.png" alt="Actividad 4 - Imagen 9" class="carousel-image">
+                                    <img src="assets/actividad 4/cap 10 contruimagen.png" alt="Actividad 4 - Imagen 10" class="carousel-image">
+                                    <img src="assets/actividad 4/cap11 imagenes creadas.png" alt="Actividad 4 - Imagen 11" class="carousel-image">
+                                    <img src="assets/actividad 4/cap12 contenedor ejecutando.png" alt="Actividad 4 - Imagen 12" class="carousel-image">
+                                    <img src="assets/actividad 4/cap13 entrandocont.png" alt="Actividad 4 - Imagen 13" class="carousel-image">
+                                    <img src="assets/actividad 4/cap14 docker inspect.png" alt="Actividad 4 - Imagen 14" class="carousel-image">
                                 </div>
 
                                 <button class="carousel-nav carousel-nav-next" aria-label="Siguiente imagen">❯</button>
@@ -317,6 +371,16 @@
                                 <button class="dot" data-index="1" aria-label="Ir a imagen 2"></button>
                                 <button class="dot" data-index="2" aria-label="Ir a imagen 3"></button>
                                 <button class="dot" data-index="3" aria-label="Ir a imagen 4"></button>
+                                <button class="dot" data-index="4" aria-label="Ir a imagen 5"></button>
+                                <button class="dot" data-index="5" aria-label="Ir a imagen 6"></button>
+                                <button class="dot" data-index="6" aria-label="Ir a imagen 7"></button>
+                                <button class="dot" data-index="7" aria-label="Ir a imagen 8"></button>
+                                <button class="dot" data-index="8" aria-label="Ir a imagen 9"></button>
+                                <button class="dot" data-index="9" aria-label="Ir a imagen 10"></button>
+                                <button class="dot" data-index="10" aria-label="Ir a imagen 11"></button>
+                                <button class="dot" data-index="11" aria-label="Ir a imagen 12"></button>
+                                <button class="dot" data-index="12" aria-label="Ir a imagen 13"></button>
+                                <button class="dot" data-index="13" aria-label="Ir a imagen 14"></button>
                             </div>
                         </div>
 
@@ -334,10 +398,16 @@
                                 <button class="carousel-nav carousel-nav-prev" aria-label="Imagen anterior">❮</button>
                                 
                                 <div class="carousel-images">
-                                    <img src="https://via.placeholder.com/400x250?text=Actividad+5+Img+1" alt="Actividad 5 - Imagen 1" class="carousel-image">
-                                    <img src="https://via.placeholder.com/400x250?text=Actividad+5+Img+2" alt="Actividad 5 - Imagen 2" class="carousel-image">
-                                    <img src="https://via.placeholder.com/400x250?text=Actividad+5+Img+3" alt="Actividad 5 - Imagen 3" class="carousel-image">
-                                    <img src="https://via.placeholder.com/400x250?text=Actividad+5+Img+4" alt="Actividad 5 - Imagen 4" class="carousel-image">
+                                    <img src="assets/actividad 5/cap1_script.png" alt="Actividad 5 - Imagen 1" class="carousel-image">
+                                    <img src="assets/actividad 5/cap2_permisos.png" alt="Actividad 5 - Imagen 2" class="carousel-image">
+                                    <img src="assets/actividad 5/cap3_dockerfile.png" alt="Actividad 5 - Imagen 3" class="carousel-image">
+                                    <img src="assets/actividad 5/cap4_construction.png" alt="Actividad 5 - Imagen 4" class="carousel-image">
+                                    <img src="assets/actividad 5/cap5_dockerimages.png" alt="Actividad 5 - Imagen 5" class="carousel-image">
+                                    <img src="assets/actividad 5/cap6_script.png" alt="Actividad 5 - Imagen 6" class="carousel-image">
+                                    <img src="assets/actividad 5/cap7_login.png" alt="Actividad 5 - Imagen 7" class="carousel-image">
+                                    <img src="assets/actividad 5/cap8_etiqueta.png" alt="Actividad 5 - Imagen 8" class="carousel-image">
+                                    <img src="assets/actividad 5/cap9_imagen.png" alt="Actividad 5 - Imagen 9" class="carousel-image">
+                                    <img src="assets/actividad 5/cap10 pull.png" alt="Actividad 5 - Imagen 10" class="carousel-image">
                                 </div>
 
                                 <button class="carousel-nav carousel-nav-next" aria-label="Siguiente imagen">❯</button>
@@ -348,6 +418,12 @@
                                 <button class="dot" data-index="1" aria-label="Ir a imagen 2"></button>
                                 <button class="dot" data-index="2" aria-label="Ir a imagen 3"></button>
                                 <button class="dot" data-index="3" aria-label="Ir a imagen 4"></button>
+                                <button class="dot" data-index="4" aria-label="Ir a imagen 5"></button>
+                                <button class="dot" data-index="5" aria-label="Ir a imagen 6"></button>
+                                <button class="dot" data-index="6" aria-label="Ir a imagen 7"></button>
+                                <button class="dot" data-index="7" aria-label="Ir a imagen 8"></button>
+                                <button class="dot" data-index="8" aria-label="Ir a imagen 9"></button>
+                                <button class="dot" data-index="9" aria-label="Ir a imagen 10"></button>
                             </div>
                         </div>
 
@@ -443,118 +519,108 @@
             </div>
         </div>
 
-        <!-- SECCIÓN TECNOLOGÍA - LINUX & DOCKER -->
+        <!-- SECCIÓN TECNOLOGÍA - STACK TÉCNICO DETALLADO -->
         <section id="tecnologia" class="seccion tech-section">
             <div class="seccion-header">
-                <h2>Tecnología: Linux & Docker</h2>
+                <h2>Stack Técnico Completo</h2>
                 <div class="header-line"></div>
-                <p>Infraestructura moderna para desarrollo de sistemas operativos</p>
+                <p>Herramientas, tecnologías y frameworks que potencian este proyecto</p>
             </div>
 
-            <!-- CONTENEDOR GRID CON TARJETAS -->
+            <!-- TARJETAS DE TECNOLOGÍAS -->
             <div class="tech-grid">
-                <!-- TARJETA LINUX -->
-                <div class="tech-card">
-                    <div class="tech-icon">🐧</div>
-                    <h3>Kernel Linux</h3>
-                    <p class="tech-category">Sistema Base</p>
-                    <p class="tech-description">Utilizamos Linux como plataforma base para el desarrollo, aprovechando su arquitectura modular y su ecosistema de herramientas de desarrollo.</p>
-                    <ul class="tech-features">
-                        <li>✓ Multitarea y multiproceso</li>
-                        <li>✓ Gestión avanzada de memoria</li>
-                        <li>✓ Sistema de permisos robusto</li>
-                        <li>✓ Comunidad activa y soporte</li>
-                    </ul>
+                <!-- TARJETA LINUX KERNEL -->
+                <div class="tech-card arch-user">
+                    <img src="logos/icon-servidor.svg" alt="Linux Kernel" class="tech-card-icon">
+                    <h3>Linux Kernel</h3>
+                    <span class="tech-badge">Core del Sistema</span>
+                    <p>Núcleo multitarea con scheduling, memoria virtual y gestión de procesos.</p>
                 </div>
 
                 <!-- TARJETA DOCKER -->
-                <div class="tech-card">
-                    <div class="tech-icon">
-                        <img src="logos/docker.png" alt="Docker" class="tech-icon-img" width="48" height="48">
-                    </div>
-                    <h3>Docker Containers</h3>
-                    <p class="tech-category">Virtualización Ligera</p>
-                    <p class="tech-description">Implementamos Docker para garantizar que el proyecto funcione en cualquier entorno sin dependencias conflictivas.</p>
-                    <ul class="tech-features">
-                        <li>✓ Contenedores independientes</li>
-                        <li>✓ Reproducibilidad garantizada</li>
-                        <li>✓ Despliegue simplificado</li>
-                        <li>✓ Escalabilidad automática</li>
-                    </ul>
+                <div class="tech-card arch-system">
+                    <img src="logos/icon-paquete.svg" alt="Docker" class="tech-card-icon">
+                    <h3>Docker</h3>
+                    <span class="tech-badge">Containerización</span>
+                    <p>Containerización ligera para despliegue consistente en múltiples ambientes.</p>
                 </div>
 
-                <!-- TARJETA KERNEL DEVELOPMENT -->
-                <div class="tech-card">
-                    <div class="tech-icon">
-                        <img src="" alt ="Kernel Dev" class="tech-icon-img" width="48" height="48">
-                    </div>
-                    <h3>Desarrollo de Kernel</h3>
-                    <p class="tech-category">Compilación y Testing</p>
-                    <p class="tech-description">Proceso completo de compilación del kernel con optimizaciones específicas y pruebas exhaustivas del sistema.</p>
-                    <ul class="tech-features">
-                        <li>✓ Compilación modular</li>
-                        <li>✓ Debugging avanzado</li>
-                        <li>✓ Testing automatizado</li>
-                        <li>✓ Perfilado de performance</li>
-                    </ul>
+                <!-- TARJETA KUBERNETES -->
+                <div class="tech-card arch-kernel">
+                    <img src="logos/icon-sincronizacion.svg" alt="Kubernetes" class="tech-card-icon">
+                    <h3>Kubernetes</h3>
+                    <span class="tech-badge">Orquestación</span>
+                    <p>Orquestación de contenedores con auto-scaling y balanceo de carga.</p>
                 </div>
 
-                <!-- TARJETA VIRTUALIZATION -->
-                <div class="tech-card">
-                    <div class="tech-icon">💻</div>
-                    <h3>Máquinas Virtuales</h3>
-                    <p class="tech-category">Entornos Aislados</p>
-                    <p class="tech-description">Utilizamos KVM/QEMU para crear entornos virtuales completamente aislados para pruebas sin afectar el sistema principal.</p>
-                    <ul class="tech-features">
-                        <li>✓ Aislamiento completo</li>
-                        <li>✓ Snapshots y recuperación</li>
-                        <li>✓ Recursos dedicados</li>
-                        <li>✓ Flexibilidad de configuración</li>
-                    </ul>
+                <!-- TARJETA BASH -->
+                <div class="tech-card arch-hardware">
+                    <img src="logos/icon-herramienta.svg" alt="Bash" class="tech-card-icon">
+                    <h3>Bash Scripting</h3>
+                    <span class="tech-badge">Automatización</span>
+                    <p>Scripts para automatización del sistema y pipelines CI/CD.</p>
                 </div>
 
-                <!-- TARJETA SYSTEM CALLS -->
-                <div class="tech-card">
-                    <div class="tech-icon">📡</div>
-                    <h3>System Calls & APIs</h3>
-                    <p class="tech-category">Interfaz Kernel-User</p>
-                    <p class="tech-description">Implementación de llamadas al sistema que permiten a las aplicaciones interactuar con el kernel de manera segura y eficiente.</p>
-                    <ul class="tech-features">
-                        <li>✓ Context switching seguro</li>
-                        <li>✓ Privilegio escalado</li>
-                        <li>✓ Manejo de excepciones</li>
-                        <li>✓ Sincronización de procesos</li>
-                    </ul>
+                <!-- TARJETA JAVA -->
+                <div class="tech-card arch-user">
+                    <img src="logos/icon-sincronizacion.svg" alt="Java" class="tech-card-icon">
+                    <h3>Java & Concurrency</h3>
+                    <span class="tech-badge">Multithreading</span>
+                    <p>Programación concurrente con threads, locks y sincronización avanzada.</p>
                 </div>
 
-                <!-- TARJETA PERFORMANCE -->
-                <div class="tech-card">
-                    <div class="tech-icon">⚡</div>
-                    <h3>Optimización & Performance</h3>
-                    <p class="tech-category">Análisis y Mejora</p>
-                    <p class="tech-description">Análisis profundo del rendimiento del sistema con herramientas como perf, strace y análisis de benchmarks.</p>
-                    <ul class="tech-features">
-                        <li>✓ Profiling en tiempo real</li>
-                        <li>✓ Análisis de bottlenecks</li>
-                        <li>✓ Optimización de caché</li>
-                        <li>✓ Benchmarking comparativo</li>
-                    </ul>
+                <!-- TARJETA GCC/GDB -->
+                <div class="tech-card arch-system">
+                    <img src="logos/icon-herramienta.svg" alt="Toolchain" class="tech-card-icon">
+                    <h3>GCC/GDB Toolchain</h3>
+                    <span class="tech-badge">Compilación</span>
+                    <p>Herramientas para compilación, debugging y profiling de aplicaciones.</p>
+                </div>
+
+                <!-- TARJETA PROCESOS IPC -->
+                <div class="tech-card arch-kernel">
+                    <img src="logos/icon-sincronizacion.svg" alt="IPC" class="tech-card-icon">
+                    <h3>Procesos e IPC</h3>
+                    <span class="tech-badge">Comunicación</span>
+                    <p>Pipes, sockets, shared memory y signals para inter-process communication.</p>
+                </div>
+
+                <!-- TARJETA MONITOREO -->
+                <div class="tech-card arch-hardware">
+                    <img src="logos/icon-analisis.svg" alt="Monitoreo" class="tech-card-icon">
+                    <h3>Monitoreo</h3>
+                    <span class="tech-badge">Observabilidad</span>
+                    <p>Herramientas para logging, métricas y análisis del sistema en tiempo real.</p>
                 </div>
             </div>
 
-            <!-- SECCIÓN ADDITIONAL INFO -->
-            <div class="tech-info-container">
-                <div class="tech-info-box">
-                    <h4>¿Por qué Linux?</h4>
-                    <p>Linux es el sistema operativo ideal para aprender sobre la arquitectura del kernel. Su código fuente es abierto, bien documentado y cuenta con una comunidad mundial que contribuye constantemente. Nos permite entender desde los principios fundamentales hasta las optimizaciones avanzadas.</p>
-                </div>
-                <div class="tech-info-box">
-                    <h4>¿Por qué Docker?</h4>
-                    <p>Docker revoluciona la forma en que distribuimos aplicaciones. Encapsula nuestro entorno completo de desarrollo en contenedores ligeros y portátiles. Esto significa que el proyecto funciona idénticamente en cualquier máquina, eliminando el clásico problema "funciona en mi máquina".</p>
-                </div>
-                <div class="tech-info-box">
-                    <h4>Stack Tecnológico</h4>
-                    <p>Nuestra pila incluye: Kernel 5.x+, Docker, QEMU/KVM, GCC Toolchain, Systemd, Bash scripting, y herramientas de análisis de performance. Todo integrado en un flujo de trabajo CI/CD automatizado.</p>
+            <!-- ARQUITECTURA DEL STACK -->
+            <div class="tech-architecture">
+                <h3>Arquitectura General del Stack Técnico</h3>
+                <div class="arch-diagram">
+                    <div class="arch-box arch-user">
+                        <img src="logos/icon-servidor.svg" alt="Aplicaciones de Usuario">
+                        <h4>Aplicaciones</h4>
+                        <p>Java, Bash, Docker</p>
+                    </div>
+                    <div class="arch-divider"></div>
+                    <div class="arch-box arch-system">
+                        <img src="logos/icon-sincronizacion.svg" alt="APIs del Sistema">
+                        <h4>Syscalls</h4>
+                        <p>fork, exec, mmap</p>
+                    </div>
+                    <div class="arch-divider"></div>
+                    <div class="arch-box arch-kernel">
+                        <img src="logos/arch-kernel.svg" alt="Kernel Linux">
+                        <h4>Kernel Linux</h4>
+                        <p>Core del SO</p>
+                    </div>
+                    <div class="arch-divider"></div>
+                    <div class="arch-box arch-hardware">
+                        <img src="logos/arch-hardware.svg" alt="Hardware">
+                        <h4>Hardware</h4>
+                        <p>CPU, RAM, I/O</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -601,8 +667,8 @@
                 <div class="team-card">
                     <div class="team-avatar">Jo</div>
                     <h3>Jorge</h3>
-                    <p class="team-role">QA Engineer</p>
-                    <p class="team-bio">Encargado de pruebas y validación del sistema.</p>
+                    <p class="team-role">Backend</p>
+                    <p class="team-bio">Videojuegos y tecnologia.</p>
                     <div class="team-social">
                         <a href="#">GitHub</a>
                         <a href="#">LinkedIn</a>
@@ -622,6 +688,7 @@
             <div class="footer-section">
                 <h4>Enlaces Rápidos</h4>
                 <ul>
+                    <li><a href="#proyecto">Proyecto</a></li>
                     <li><a href="#videos">Videos</a></li>
                     <li><a href="#imagenes">Galería</a></li>
                     <li><a href="#tecnologia">Tecnología</a></li>

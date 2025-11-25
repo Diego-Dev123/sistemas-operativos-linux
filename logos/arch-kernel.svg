@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="64" height="64">
+  <!-- Fondo del círculo -->
+  <circle cx="50" cy="50" r="45" fill="#EC4899" opacity="0.1"/>
+  
+  <!-- Núcleo central -->
+  <rect x="30" y="30" width="40" height="40" rx="8" fill="#EC4899"/>
+  
+  <!-- Líneas de circuito -->
+  <line x1="35" y1="35" x2="65" y2="35" stroke="white" stroke-width="2"/>
+  <line x1="35" y1="50" x2="65" y2="50" stroke="white" stroke-width="2"/>
+  <line x1="35" y1="65" x2="65" y2="65" stroke="white" stroke-width="2"/>
+  
+  <!-- Puntos de conexión -->
+  <circle cx="35" cy="35" r="2" fill="white"/>
+  <circle cx="50" cy="35" r="2" fill="white"/>
+  <circle cx="65" cy="35" r="2" fill="white"/>
+  <circle cx="35" cy="50" r="2" fill="white"/>
+  <circle cx="65" cy="50" r="2" fill="white"/>
+  <circle cx="35" cy="65" r="2" fill="white"/>
+  <circle cx="50" cy="65" r="2" fill="white"/>
+  <circle cx="65" cy="65" r="2" fill="white"/>
+  
+  <!-- Texto -->
+  <text x="50" y="85" font-size="10" font-weight="bold" text-anchor="middle" fill="#EC4899">KERNEL</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="64" height="64">
+  <!-- Engranaje/Sincronización icon -->
+  <circle cx="50" cy="50" r="30" fill="none" stroke="#EC4899" stroke-width="2"/>
+  <g id="tooth">
+    <rect x="48" y="15" width="4" height="10" fill="#EC4899"/>
+  </g>
+  <use href="#tooth" transform="rotate(45 50 50)"/>
+  <use href="#tooth" transform="rotate(90 50 50)"/>
+  <use href="#tooth" transform="rotate(135 50 50)"/>
+  <use href="#tooth" transform="rotate(180 50 50)"/>
+  <use href="#tooth" transform="rotate(225 50 50)"/>
+  <use href="#tooth" transform="rotate(270 50 50)"/>
+  <use href="#tooth" transform="rotate(315 50 50)"/>
+  <circle cx="50" cy="50" r="12" fill="#EC4899"/>
+  <circle cx="50" cy="50" r="6" fill="white"/>
+</svg>

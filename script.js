@@ -483,20 +483,36 @@ const activityData = {
         title: 'Sistema de Archivos',
         description: 'Estructura del sistema de archivos con inodes, bloques de datos, directorios y sistema de permisos.',
         images: [
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+4+Img+1', desc: 'Estructura de inodes y bloques de datos'},
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+4+Img+2', desc: 'Organización de directorios y árboles de archivos'},
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+4+Img+3', desc: 'Sistema de permisos Unix y control de acceso'},
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+4+Img+4', desc: 'Gestión de espacio libre y fragmentación'}
+            {src: 'assets/actividad 4/cap 1.png', desc: 'actualizar docker'},
+            {src: 'assets/actividad 4/cap2 comlementos.png', desc: 'Complementos necesarios para docker'},
+            {src: 'assets/actividad 4/cap3 aggg repo.png', desc: 'agregando el repositorio de docker'},
+            {src: 'assets/actividad 4/cap4 engine.png', desc: 'instalacion docker engine'},
+            {src: 'assets/actividad 4/cap5 serviciodocker.png', desc: 'iniciando servicio de docker'},
+            {src: 'assets/actividad 4/cap6 dockerversion.png', desc: 'verificando la version de docker instalada'},
+            {src: 'assets/actividad 4/cap7 dockerinfo.png', desc: 'comando docker info para verificar la instalacion'},
+            {src: 'assets/actividad 4/cap8 dockerrun.png', desc: 'ejecutando contenedor de prueba'},
+            {src: 'assets/actividad 4/cap9_dockerfile.png', desc: 'Creacion del Dockerfile'},
+            {src: 'assets/actividad 4/cap 10 contruimagen.png', desc: 'Construcción de imagen Docker'},
+            {src: 'assets/actividad 4/cap11 imagenes creadas.png', desc: 'Imágenes Docker creadas y disponibles'},
+            {src: 'assets/actividad 4/cap12 contenedor ejecutando.png', desc: 'Contenedor en ejecución'},
+            {src: 'assets/actividad 4/cap13 entrandocont.png', desc: 'Acceso al contenedor Docker'},
+            {src: 'assets/actividad 4/cap14 docker inspect.png', desc: 'Inspección detallada del contenedor'}
         ]
     },
     5: {
         title: 'Sincronización de Hilos',
         description: 'Mecanismos de sincronización: semáforos, mutex, monitores y control de concurrencia entre hilos.',
         images: [
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+5+Img+1', desc: 'Conceptos de semáforos y variables de condición'},
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+5+Img+2', desc: 'Implementación de mutex y locks'},
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+5+Img+3', desc: 'Sincronización con monitores y barreras'},
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+5+Img+4', desc: 'Detección y prevención de deadlocks'}
+            {src: 'assets/actividad 5/cap1_script.png', desc: 'Script para ejecutar comandos del sistema'},
+            {src: 'assets/actividad 5/cap2_permisos.png', desc: 'Asignación de permisos al script'},
+            {src: 'assets/actividad 5/cap3_dockerfile.png', desc: 'Creación del Dockerfile para la imagen'},
+            {src: 'assets/actividad 5/cap4_construction.png', desc: 'Construcción de la imagen Docker'},
+            {src: 'assets/actividad 5/cap5_dockerimages.png', desc: 'Verificación de imágenes Docker creadas'},
+            {src: 'assets/actividad 5/cap6_script.png', desc: 'Script funcionando correctamente'},
+            {src: 'assets/actividad 5/cap7_login.png', desc: 'Autenticación en Docker Hub'},
+            {src: 'assets/actividad 5/cap8_etiqueta.png', desc: 'Etiquetado de imagen y preparación para subir'},
+            {src: 'assets/actividad 5/cap9_imagen.png', desc: 'Imagen subida exitosamente a Docker Hub'},
+            {src: 'assets/actividad 5/cap10 pull.png', desc: 'Descarga de imagen desde Docker Hub'}
         ]
     },
     6: {

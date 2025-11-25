@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="64" height="64">
+  <!-- Caja/Paquete icon -->
+  <path d="M 20 35 L 50 15 L 80 35 L 80 75 Q 80 80 75 80 L 25 80 Q 20 80 20 75 Z" fill="none" stroke="#EC4899" stroke-width="2"/>
+  <line x1="50" y1="15" x2="50" y2="45" stroke="#EC4899" stroke-width="2"/>
+  <line x1="20" y1="35" x2="80" y2="35" stroke="#EC4899" stroke-width="2"/>
+  <polyline points="50,45 80,35" stroke="#EC4899" stroke-width="2" fill="none"/>
+  <polyline points="50,45 20,35" stroke="#EC4899" stroke-width="2" fill="none"/>
+</svg>
