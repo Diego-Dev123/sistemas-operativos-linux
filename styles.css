@@ -1,4 +1,24 @@
 /* ============================================
+   BACKGROUND PARTICLES STYLES
+   ============================================ */
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(135deg, #f5f7fa 0%, #f9fafb 100%);
+}
+
+body > *:not(#particles-js) {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================
    VARIABLES CSS - PALETA Y TIPOGRAFÍA
    ============================================ */
 
@@ -251,6 +271,69 @@ a:focus-visible {
   overflow: hidden;
 }
 
+/* Burbujas interactivas */
+.bubbles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: all;
+  z-index: 1;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(147, 197, 253, 0.15), rgba(191, 219, 254, 0.08));
+  border: 1px solid rgba(147, 197, 253, 0.25);
+  cursor: pointer;
+  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 0.4), 0 8px 20px rgba(59, 130, 246, 0.15), inset 2px 2px 8px rgba(255, 255, 255, 0.2);
+  animation: float 6s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.bubble:hover {
+  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 0.5), 0 12px 25px rgba(59, 130, 246, 0.2), inset 2px 2px 8px rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.bubble.burst {
+  animation: burstAnimation 0.6s ease-out forwards;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes burstAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.burst-particle {
+  position: absolute;
+  pointer-events: none;
+}
+
+.burst-particle-element {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.6), rgba(96, 165, 250, 0.4));
+}
+
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
@@ -342,7 +425,8 @@ a:focus-visible {
   right: 0;
   width: 400px;
   height: 400px;
-  opacity: 0.08;
+  opacity: 0;
+  display: none;
 }
 
 .shape {

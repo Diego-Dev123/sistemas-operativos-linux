@@ -7,6 +7,132 @@ window.addEventListener('scroll', () => {
     scrollY = window.pageYOffset;
 }, { passive: true });
 
+// ==================== BURBUJAS INTERACTIVAS EN HERO ====================
+
+function createBubbles() {
+    const container = document.getElementById('bubblesContainer');
+    if (!container) return;
+
+    const bubbleCount = 12;
+    
+    for (let i = 0; i < bubbleCount; i++) {
+        const bubble = document.createElement('div');
+        bubble.className = 'bubble';
+        
+        const size = Math.random() * 80 + 50; // Entre 50px y 130px
+        const left = Math.random() * 100;
+        const top = Math.random() * 100; // En toda la altura
+        const delay = Math.random() * 2;
+        
+        bubble.style.width = size + 'px';
+        bubble.style.height = size + 'px';
+        bubble.style.left = left + '%';
+        bubble.style.top = top + '%';
+        bubble.style.animationDelay = delay + 's';
+        
+        bubble.addEventListener('click', (e) => {
+            e.stopPropagation();
+            burstBubble(bubble);
+        });
+        
+        container.appendChild(bubble);
+    }
+}
+
+function burstBubble(bubble) {
+    if (bubble.classList.contains('burst')) return;
+    
+    bubble.classList.add('burst');
+    
+    // Crear partículas al reventar
+    const rect = bubble.getBoundingClientRect();
+    const x = rect.left + rect.width / 2;
+    const y = rect.top + rect.height / 2;
+    
+    createBurstEffect(x, y);
+    
+    // Remover burbuja después de animación
+    setTimeout(() => {
+        bubble.remove();
+        // Crear nueva burbuja
+        createNewBubble();
+    }, 600);
+}
+
+function createNewBubble() {
+    const container = document.getElementById('bubblesContainer');
+    if (!container) return;
+    
+    const bubble = document.createElement('div');
+    bubble.className = 'bubble';
+    
+    const size = Math.random() * 80 + 40;
+    const left = Math.random() * 100;
+    const top = Math.random() * 80;
+    const delay = 0;
+    
+    bubble.style.width = size + 'px';
+    bubble.style.height = size + 'px';
+    bubble.style.left = left + '%';
+    bubble.style.top = top + '%';
+    bubble.style.animationDelay = delay + 's';
+    
+    bubble.addEventListener('click', (e) => {
+        e.stopPropagation();
+        burstBubble(bubble);
+    });
+    
+    container.appendChild(bubble);
+}
+
+function createBurstEffect(x, y) {
+    const particleCount = 12;
+    
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'burst-particle';
+        
+        const element = document.createElement('div');
+        element.className = 'burst-particle-element';
+        particle.appendChild(element);
+        
+        const angle = (i / particleCount) * Math.PI * 2;
+        const velocity = 5 + Math.random() * 3;
+        
+        particle.style.left = x + 'px';
+        particle.style.top = y + 'px';
+        particle.style.pointerEvents = 'none';
+        particle.style.zIndex = '1000';
+        
+        document.body.appendChild(particle);
+        
+        let vx = Math.cos(angle) * velocity;
+        let vy = Math.sin(angle) * velocity;
+        let life = 1;
+        
+        function animate() {
+            life -= 0.02;
+            vx *= 0.98;
+            vy *= 0.98;
+            vy += 0.1; // Gravedad
+            
+            x += vx;
+            y += vy;
+            
+            particle.style.left = x + 'px';
+            particle.style.top = y + 'px';
+            particle.style.opacity = life;
+            
+            if (life > 0) {
+                requestAnimationFrame(animate);
+            } else {
+                particle.remove();
+            }
+        }
+        animate();
+    }
+}
+
 // ==================== INTERSECTION OBSERVER AVANZADO ====================
 
 const observerConfig = {
@@ -758,4 +884,28 @@ document.addEventListener('keydown', (e) => {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('✨ Galería y carruseles inicializados');
     initializeCarousels();
+    
+    // Crear burbujas interactivas en el hero
+    createBubbles();
+    
+    // Inicializar partículas
+    if (window.particlesJS) {
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: ['#EF4444', '#d4af37'] },
+                shape: { type: 'circle', stroke: { width: 0, color: '#000000' }, polygon: { nb_sides: 5 } },
+                opacity: { value: 0.5, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
+                size: { value: 3, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } },
+                line_linked: { enable: true, distance: 150, color: '#d4af37', opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true },
+                modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } }
+            },
+            retina_detect: true
+        });
+    }
 });
