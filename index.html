@@ -631,6 +631,42 @@
             </div>
         </section>
 
+           <!-- Aqui agregue la secion documentos --> 
+        <!-- SECCIÓN DOCUMENTOS -->
+<section id="documentos" class="seccion docs-section">
+    <div class="seccion-header">
+        <h2>Documentos del Proyecto</h2>
+        <div class="header-line"></div>
+        <p>Sube y visualiza archivos relacionados con el proyecto (PDF, DOCX, imágenes, etc.)</p>
+    </div>
+
+    <!-- CONTENEDOR -->
+    <div class="docs-container">
+
+        <!-- SUBIR ARCHIVO (solo para ti) -->
+        <div class="upload-box">
+            <h3>Subir Archivo</h3>
+            <form id="uploadForm" enctype="multipart/form-data" method="POST" action="upload.php">
+                <input type="file" name="archivo" id="archivo" required>
+                <button type="submit" class="btn-cta">Subir</button>
+            </form>
+
+            <p class="subir-nota">* Solo administrador (tú) debe tener acceso a esta parte.</p>
+        </div>
+
+        <!-- LISTA DE ARCHIVOS -->
+        <div class="files-box">
+            <h3>Archivos Disponibles</h3>
+            <ul id="listaArchivos" class="files-list">
+                <!-- Se llena con JS o desde el backend -->
+            </ul>
+        </div>
+
+    </div>
+</section>
+           <!-- Aqui terminar la secion documentos --> 
+
+
         <!-- SECCIÓN EQUIPO -->
         <section id="equipo" class="seccion team-section">
             <div class="seccion-header">
