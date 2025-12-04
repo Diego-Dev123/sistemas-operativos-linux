@@ -2832,7 +2832,7 @@ textarea {
     -webkit-line-clamp: 2;
     line-clamp: 2;
   }
-
+}
 /*Aqui empieza*/
 .docs-section {
     padding: 60px 20px;
@@ -2875,4 +2875,4 @@ textarea {
     font-weight: bold;
 }
 /*termina*/
-}
+
