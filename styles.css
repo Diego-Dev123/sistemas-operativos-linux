@@ -2832,8 +2832,6 @@ textarea {
     -webkit-line-clamp: 2;
     line-clamp: 2;
   }
-}
-
 
 /*Aqui empieza*/
 .docs-section {
@@ -2877,3 +2875,4 @@ textarea {
     font-weight: bold;
 }
 /*termina*/
+}
