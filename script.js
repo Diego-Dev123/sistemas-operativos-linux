@@ -1,3 +1,24 @@
+// ==================== NAVBAR GLASSMORPHISM SCROLL EFFECT ====================
+
+const navbar = document.querySelector('.navbar');
+let lastScroll = 0;
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 50) {
+        navbar.style.background = 'rgba(17, 24, 39, 0.95)';
+        navbar.style.backdropFilter = 'blur(16px) saturate(200%)';
+        navbar.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.15)';
+    } else {
+        navbar.style.background = 'rgba(17, 24, 39, 0.8)';
+        navbar.style.backdropFilter = 'blur(12px) saturate(180%)';
+        navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), inset 0 1px 0 0 rgba(255, 255, 255, 0.1)';
+    }
+    
+    lastScroll = currentScroll;
+}, { passive: true });
+
 // ==================== SCROLL PARALLAX ULTRA AVANZADO ====================
 
 let scrollY = 0;
