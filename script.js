@@ -617,15 +617,31 @@ const activityData = {
         ]
     },
     3: {
-        title: 'Gestión de Memoria Virtual',
-        description: 'Implementación de memoria virtual con paginación, tablas de páginas y algoritmos de reemplazo.',
-        images: [
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+3+Img+1', desc: 'Sistema de paginación y traducción de direcciones virtuales'},
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+3+Img+2', desc: 'Estructura de tablas de páginas multinivel'},
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+3+Img+3', desc: 'Algoritmos de reemplazo de páginas (LRU, FIFO)'},
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+3+Img+4', desc: 'Gestión de memoria virtual y swap'}
-        ]
-    },
+    title: 'Gestión de Memoria Virtual',
+    description: 'Implementación de memoria virtual con paginación, tablas de páginas y algoritmos de reemplazo.',
+    images: [
+        {src: 'assets/Actividad 3/Funcionalidad_Script.png', desc: 'Funcionalidad del script y salida'},
+        {src: 'assets/Actividad 3/Diferencia_GraficavsConsola.png', desc: 'Gráfica vs consola'},
+        {src: 'assets/Actividad 3/automatizacion.png', desc: 'Automatización en consola y GUI'},
+        {src: 'assets/Actividad 3/htop.png', desc: 'Salida de htop mostrando procesos'},
+        {src: 'assets/Actividad 3/top.png', desc: 'Salida de top mostrando procesos'},
+        {src: 'assets/Actividad 3/ls_proc.png', desc: 'Listado de /proc y procesos'},
+        {src: 'assets/Actividad 3/Ps_aux.png', desc: 'ps aux - vista completa de procesos'},
+        {src: 'assets/Actividad 3/ps_aux_grepZ.png', desc: 'ps aux | grep -Z ejemplo'},
+        {src: 'assets/Actividad 3/ps_aux_head.png', desc: 'ps aux | head - vista inicial'},
+        {src: 'assets/Actividad 3/pkill.png', desc: 'pkill demostración'},
+        {src: 'assets/Actividad 3/pgrep.png', desc: 'pgrep demostración'},
+        {src: 'assets/Actividad 3/pgtree.png', desc: 'pgtree - árbol de procesos'},
+        {src: 'assets/Actividad 3/pkill.png', desc: 'pkill (duplicado si lo necesitas)'},
+        {src: 'assets/Actividad 3/kill.png', desc: 'kill - señal TERM'},
+        {src: 'assets/Actividad 3/kill_STOP.png', desc: 'kill - enviar STOP'},
+        {src: 'assets/Actividad 3/killall.png', desc: 'killall demostración'},
+        {src: 'assets/Actividad 3/nice.png', desc: 'nice - establecer prioridad'},
+        {src: 'assets/Actividad 3/renice.png', desc: 'renice - cambiar prioridad de un proceso'},
+        {src: 'assets/Actividad 3/Jps_xubuntu.png', desc: 'jps en Xubuntu'},
+        {src: 'assets/Actividad 3/Jps_proceso_ejecucion_alma.png', desc: 'jps en Alma Linux'}
+       ]
+   },
     4: {
         title: 'Sistema de Archivos',
         description: 'Estructura del sistema de archivos con inodes, bloques de datos, directorios y sistema de permisos.',
