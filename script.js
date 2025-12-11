@@ -678,15 +678,22 @@ const activityData = {
         ]
     },
     6: {
-        title: 'Sistema de I/O',
-        description: 'Gestión de entrada/salida, controladores de dispositivos e interrupciones del sistema.',
+        title: ' Instalación y Despliegue de Kubernetes',
+        description: 'Instalación de Kubernetes y despliegue de una imagen desde Docker Hub.',
         images: [
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+6+Img+1', desc: 'Arquitectura de entrada/salida y buses de comunicación'},
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+6+Img+2', desc: 'Manejadores de interrupciones y controladores de dispositivos'},
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+6+Img+3', desc: 'Gestión de buffers y caché de entrada/salida'},
-            {src: 'https://via.placeholder.com/400x250?text=Actividad+6+Img+4', desc: 'Optimización de operaciones de disco'}
+            {src: 'assets/actividad_6/actividad_6-1/cap_1.png', desc: ''},
+            {src: 'assets/actividad_6/actividad_6-1/cap_2.png', desc: ''},
+            {src: 'assets/actividad_6/actividad_6-1/cap_3.png', desc: ''},
+            {src: 'assets/actividad_6/actividad_6-2/cap_1.png', desc: ''},
+            {src: 'assets/actividad_6/actividad_6-2/cap_2.png', desc: ''},
+            {src: 'assets/actividad_6/actividad_6-2/cap_3.png', desc: ''},
+            {src: 'assets/actividad_6/actividad_6-2/cap_4.png', desc: ''},
+            {src: 'assets/actividad_6/actividad_6-2/cap_5.png', desc: ''},
+            {src: 'assets/actividad_6/actividad_6-2/cap_6.png', desc: ''},
         ]
-    }
+    },
+
+  
 };
 
 // Carousel state
@@ -709,7 +716,34 @@ function initializeCarousels() {
             dots[0].classList.add('active');
         }
     });
+
 }
+
+//Carga las imagenes de la actividad 6 xd
+const loadActivityImages = (activityNumber) => {
+    
+    const activity = activityData[activityNumber];
+    if (!activity) return;
+
+    console.log('Cargando imágenes para la actividad', activityNumber);
+    const card = document.querySelector(`.gallery-card[data-activity="${activityNumber}"]`);
+    if (!card) return;
+
+    const imagesContainer = card.querySelector('.carousel-images');
+    imagesContainer.innerHTML = ''; 
+
+    activity.images.forEach(img => {
+        const imgElement = document.createElement('img');
+        imgElement.src = img.src;
+        imgElement.alt = img.desc;
+        imgElement.classList.add('carousel-image');
+        imagesContainer.appendChild(imgElement);
+    });
+    
+}
+
+
+loadActivityImages(6);
 
 // Setup carousel event listeners
 function setupCarouselListeners(card, activity) {
@@ -919,10 +953,13 @@ document.addEventListener('keydown', (e) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('✨ Galería y carruseles inicializados');
+ 
     initializeCarousels();
     
     // Crear burbujas interactivas en el hero
     createBubbles();
+
+
     
     // Inicializar partículas
     if (window.particlesJS) {
@@ -944,4 +981,6 @@ document.addEventListener('DOMContentLoaded', () => {
             retina_detect: true
         });
     }
+
+   
 });
